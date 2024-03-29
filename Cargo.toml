@@ -1,0 +1,12 @@
+[package]
+name = "health-notify"
+license = "Apache-2.0"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.81"
+clap = { version = "4.5.4", features = ["derive"] }
+nix = { version = "0.28.0", features = ["signal"] }
+shuteye = "0.3.3"
+signal-hook = { version = "0.3.17", features = ["iterator", "extended-siginfo"] }
